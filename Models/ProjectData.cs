@@ -16,6 +16,14 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Description = "A practice portfolio using Razor views and Bootstrap.",
                 ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Draft+Portfolio"
             },
+            new Project
+            {
+                Id = 2,
+                Title = "16Personalities Copy",
+                GithubUrl = "https://github.com/Kianneo/PersonalityTest",
+                Description = "A practice website imitating the 16Personalities test. Returns an actual result based on your answers.",
+                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=16Personalities"
+            },
         };
     }
 }
