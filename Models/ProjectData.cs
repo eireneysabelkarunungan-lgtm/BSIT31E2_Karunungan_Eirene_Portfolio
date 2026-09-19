@@ -56,6 +56,14 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                     Description = "A web-based Point of Sale application for cashiers at a retro gaming shop — browse items, build a cart, update quantities, checkout, and review past sales receipts.",
                     ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Retro+POS"
                 },
+            new Project
+            {
+                Id = 7,
+                Title = "MVC Authentication",
+                GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_MIDTERM_Q3_Karunungan_Eirene",
+                Description = "A web system that practices guarding pages by locking users out after a limited number of failed login attempts.",
+                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=MVC+Auth"
+            },
         };
     }
 }
