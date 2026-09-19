@@ -32,6 +32,14 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Description = "A simple login simulation using MVC model binding and data annotations to validate input.",
                 ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Model+Binding"
             },
+            new Project
+            {
+                Id = 4,
+                Title = "YouTube Playlist Builder",
+                GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_MIDTERM_Q2_karunungan_Eirene",
+                Description = "A simple YouTube playlist builder web application using DTOs.",
+                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Playlist+Builder"
+            },
         };
     }
 }
