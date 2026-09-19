@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
-    <div class="exam-shell" style="max-width: 420px;">
+<body style="min-height: 100vh; display: flex; align-items: center; justify-content: center; margin: 0;">
+    <div class="exam-shell" style="max-width: 420px; margin: 0;">
         <div class="exam-card">
             <h1 class="exam-heading">Sign in</h1>
             <p class="exam-subtitle">Please sign in to view the portfolio.</p>
@@ -27,11 +27,40 @@
                 <input class="form-control-exam" type="text" name="username" placeholder="admin" required />
 
                 <span class="field-label">Password</span>
-                <input class="form-control-exam" type="password" name="password" placeholder="••••••••" required />
+                <div class="password-wrap">
+                    <input class="form-control-exam" type="password" name="password" id="passwordInput" placeholder="••••••••" required />
+                    <button type="button" class="toggle-password" onclick="togglePassword()">
+                        <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                            <line x1="1" y1="1" x2="23" y2="23"></line>
+                        </svg>
+                    </button>
+                </div>
 
                 <button type="submit" class="btn-exam" style="width:100%; justify-content:center; margin-top: 10px;">Sign in &rarr;</button>
             </form>
         </div>
     </div>
+    <script>
+        function togglePassword() {
+            var input = document.getElementById('passwordInput');
+            var btn = document.querySelector('.toggle-password');
+            var eyeIcon = btn.querySelector('.icon-eye');
+            var eyeOffIcon = btn.querySelector('.icon-eye-off');
+            if (input.type === 'password') {
+                input.type = 'text';
+                eyeIcon.style.display = 'none';
+                eyeOffIcon.style.display = 'block';
+            } else {
+                input.type = 'password';
+                eyeIcon.style.display = 'block';
+                eyeOffIcon.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

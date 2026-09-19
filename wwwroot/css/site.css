@@ -355,3 +355,37 @@ body {
         grid-template-columns: 1fr;
     }
 }
+.password-wrap {
+    position: relative;
+}
+
+    .password-wrap .form-control-exam {
+        padding-right: 44px;
+    }
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-gray);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+    .toggle-password:hover {
+        color: var(--accent-blue-dark);
+    }
+
+    .toggle-password svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .toggle-password .icon-eye-off {
+        display: none;
+    }
