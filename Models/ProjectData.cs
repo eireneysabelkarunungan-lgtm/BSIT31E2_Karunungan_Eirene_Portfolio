@@ -14,7 +14,7 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Title = "Draft Portfolio",
                 GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_Midterm_A1_Karunungan_Eirene",
                 Description = "A practice portfolio using Razor views and Bootstrap.",
-                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Draft+Portfolio"
+                ThumbnailUrl = ""
             },
             new Project
             {
@@ -40,6 +40,15 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Description = "A simple YouTube playlist builder web application using DTOs.",
                 ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Playlist+Builder"
             },
+            new Project
+            {
+                Id = 5,
+                Title = "Vehicle Monitoring System",
+                GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_MIDTERM_EXAM_1_KarununganEirene",
+                Description = "A web system used to register, log in, and monitor customer vehicles from check-in until release.",
+                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Vehicle+Monitoring"
+            },
+
         };
     }
 }
