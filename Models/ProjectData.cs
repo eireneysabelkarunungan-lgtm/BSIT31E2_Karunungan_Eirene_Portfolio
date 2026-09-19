@@ -14,7 +14,7 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Title = "Draft Portfolio",
                 GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_Midterm_A1_Karunungan_Eirene",
                 Description = "A practice portfolio using Razor views and Bootstrap.",
-                ThumbnailUrl = ""
+                ThumbnailUrl = "/images/draftport.png"
             },
             new Project
             {
@@ -22,7 +22,7 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Title = "16Personalities Copy",
                 GithubUrl = "https://github.com/Kianneo/PersonalityTest",
                 Description = "A practice website imitating the 16Personalities test. Returns an actual result based on your answers.",
-                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=16Personalities"
+                ThumbnailUrl = "/images/16personalities.png"
             },
             new Project
             {
@@ -30,7 +30,7 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Title = "MVC Model Binding",
                 GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_BSIT_-31E2-_-karunungan_eirene",
                 Description = "A simple login simulation using MVC model binding and data annotations to validate input.",
-                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Model+Binding"
+                ThumbnailUrl = "/images/modelbinding.png"
             },
             new Project
             {
@@ -38,7 +38,7 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Title = "YouTube Playlist Builder",
                 GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_MIDTERM_Q2_karunungan_Eirene",
                 Description = "A simple YouTube playlist builder web application using DTOs.",
-                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Playlist+Builder"
+                ThumbnailUrl = "/images/ytbuilder.png"
             },
             new Project
             {
@@ -46,7 +46,7 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Title = "Vehicle Monitoring System",
                 GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_MIDTERM_EXAM_1_KarununganEirene",
                 Description = "A web system used to register, log in, and monitor customer vehicles from check-in until release.",
-                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Vehicle+Monitoring"
+                ThumbnailUrl = "/images/vehicle.png"
             },
             new Project
                 {
@@ -54,7 +54,7 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                     Title = "Retro Game Haven POS",
                     GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_MIDTERM_H1_H2_H3_Karunungan_EireneYsabel",
                     Description = "A web-based Point of Sale application for cashiers at a retro gaming shop — browse items, build a cart, update quantities, checkout, and review past sales receipts.",
-                    ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Retro+POS"
+                    ThumbnailUrl = "/images/retro.png"
                 },
             new Project
             {
@@ -62,7 +62,7 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Title = "MVC Authentication",
                 GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_MIDTERM_Q3_Karunungan_Eirene",
                 Description = "A web system that practices guarding pages by locking users out after a limited number of failed login attempts.",
-                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=MVC+Auth"
+                ThumbnailUrl = "/images/mvcauth.png"
             },
             new Project
             {
@@ -70,7 +70,7 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Title = "EF Core Database Project",
                 GithubUrl = "https://github.com/R3n3n/IT_ELECTIVE_PREFINALS_PROJECT",
                 Description = "A web system that displays accurate information from a specified connected database using Entity Framework Core.",
-                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=EF+Core+DB"
+                ThumbnailUrl = "/images/efcore.png"
             },
         };
     }
