@@ -7,11 +7,20 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Controllers
     {
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetString("IsLoggedIn") != "true")
+            {
+                return RedirectToAction("Login", "Account");
+            }
             return View(ProjectData.All.OrderBy(p => p.Id).ToList());
         }
 
+
         public IActionResult Details(int id)
         {
+            if (HttpContext.Session.GetString("IsLoggedIn") != "true")
+            {
+                return RedirectToAction("Login", "Account");
+            }
             var project = ProjectData.All.FirstOrDefault(p => p.Id == id);
             if (project == null)
             {
@@ -29,6 +38,10 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Controllers
         [HttpPost]
         public IActionResult AddComment(int projectId, string author, string text)
         {
+            if (HttpContext.Session.GetString("IsLoggedIn") != "true")
+            {
+                return RedirectToAction("Login", "Account");
+            }
             if (!string.IsNullOrWhiteSpace(author) && !string.IsNullOrWhiteSpace(text))
             {
                 CommentStore.All.Add(new Comment
