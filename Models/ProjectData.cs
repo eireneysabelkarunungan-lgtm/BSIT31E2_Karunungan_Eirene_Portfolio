@@ -64,6 +64,14 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Description = "A web system that practices guarding pages by locking users out after a limited number of failed login attempts.",
                 ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=MVC+Auth"
             },
+            new Project
+            {
+                Id = 8,
+                Title = "EF Core Database Project",
+                GithubUrl = "https://github.com/R3n3n/IT_ELECTIVE_PREFINALS_PROJECT",
+                Description = "A web system that displays accurate information from a specified connected database using Entity Framework Core.",
+                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=EF+Core+DB"
+            },
         };
     }
 }
