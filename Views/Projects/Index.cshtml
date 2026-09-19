@@ -1,31 +1,39 @@
 ﻿@model List<BSIT31E2_Karunungan_Eirene_Portfolio.Models.Project>
 
-    @{
+@{
     ViewData["Title"] = "My Portfolio";
-    }
+}
 
-    <div class="exam-shell">
-        <div class="exam-card">
-            <h1 class="exam-heading">My Portfolio</h1>
-            <p class="exam-subtitle">Eirene Ysabel Karunungan &bull; BSIT31E2 &mdash; a collection of my IT Elective 2 projects.</p>
+<div class="exam-shell">
+    <div class="exam-card">
+        <div class="hero-banner">
+            <div class="hero-content">
+                <div class="hero-avatar">EK</div>
+                <div class="hero-eyebrow">IT Elective 2 &middot; BSIT31E2</div>
+                <h1 class="exam-heading">My Portfolio</h1>
+                <p class="exam-subtitle">Eirene Ysabel Karunungan &mdash; a collection of my projects from IT Elective 2.</p>
+            </div>
+        </div>
 
-            <span class="field-label">Table of Contents (@Model.Count projects)</span>
-            <div class="project-grid" style="margin-top: 12px;">
-                @foreach (var p in Model)
+        <span class="field-label">Table of Contents (@Model.Count projects)</span>
+        <div class="project-grid" style="margin-top: 12px;">
+            @foreach (var p in Model)
             {
                 <a class="project-card" asp-action="Details" asp-route-id="@p.Id">
-                    <img src="@p.ThumbnailUrl" alt="@p.Title thumbnail" />
+                    <div class="thumb-wrap">
+                        <img src="@p.ThumbnailUrl" alt="@p.Title thumbnail" />
+                    </div>
                     <div class="project-card-body">
                         <h5>@p.Title</h5>
                         <p>@p.Description</p>
                     </div>
                 </a>
             }
-            </div>
+        </div>
 
-            @if (!Model.Any())
+        @if (!Model.Any())
         {
             <p class="exam-subtitle">No projects added yet.</p>
         }
-        </div>
     </div>
+</div>
