@@ -48,7 +48,14 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Description = "A web system used to register, log in, and monitor customer vehicles from check-in until release.",
                 ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Vehicle+Monitoring"
             },
-
+            new Project
+                {
+                    Id = 6,
+                    Title = "Retro Game Haven POS",
+                    GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_2_MIDTERM_H1_H2_H3_Karunungan_EireneYsabel",
+                    Description = "A web-based Point of Sale application for cashiers at a retro gaming shop — browse items, build a cart, update quantities, checkout, and review past sales receipts.",
+                    ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Retro+POS"
+                },
         };
     }
 }
