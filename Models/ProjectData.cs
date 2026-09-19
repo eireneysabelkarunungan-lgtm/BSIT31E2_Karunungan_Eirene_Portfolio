@@ -24,6 +24,14 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Models
                 Description = "A practice website imitating the 16Personalities test. Returns an actual result based on your answers.",
                 ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=16Personalities"
             },
+            new Project
+            {
+                Id = 3,
+                Title = "MVC Model Binding",
+                GithubUrl = "https://github.com/eireneysabelkarunungan-lgtm/IT_ELECTIVE_BSIT_-31E2-_-karunungan_eirene",
+                Description = "A simple login simulation using MVC model binding and data annotations to validate input.",
+                ThumbnailUrl = "https://placehold.co/600x400/FBF3E1/1F2A44?text=Model+Binding"
+            },
         };
     }
 }
