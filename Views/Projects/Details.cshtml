@@ -1,0 +1,40 @@
+﻿@model BSIT31E2_Karunungan_Eirene_Portfolio.Models.Project
+@{
+    ViewData["Title"] = Model.Title;
+    var comments = ViewBag.Comments as List<BSIT31E2_Karunungan_Eirene_Portfolio.Models.Comment>;
+}
+
+<div class="exam-shell">
+    <div class="exam-card">
+        <a asp-action="Index" class="btn-exam" style="margin-bottom:20px;">&larr; Back to Portfolio</a>
+
+        <img src="@Model.ThumbnailUrl" alt="@Model.Title thumbnail" style="width:100%; border-radius:16px; margin-bottom:20px;" />
+
+        <h1 class="exam-heading">@Model.Title</h1>
+        <p class="exam-subtitle">@Model.Description</p>
+        <a class="btn-exam" href="@Model.GithubUrl" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+
+        <hr style="margin: 32px 0; border-color: var(--border);" />
+
+        <span class="field-label">Comments (@(comments?.Count ?? 0))</span>
+        @if (comments != null)
+        {
+            foreach (var c in comments)
+            {
+        <div class="comment-item">
+            <span class="comment-author">@c.Author</span>
+            <span class="comment-date">@c.PostedAt.ToString("MMM d, yyyy h:mm tt")</span>
+            <div>@c.Text</div>
+        </div>
+            }
+        }
+
+        <form asp-action="AddComment" asp-controller="Projects" method="post" style="margin-top: 20px;">
+            <input type="hidden" name="projectId" value="@Model.Id" />
+            <span class="field-label">Add a Comment</span>
+            <input class="form-control-exam" type="text" name="author" placeholder="Your name" required />
+            <textarea class="form-control-exam" name="text" rows="3" placeholder="Your comment" required></textarea>
+            <button type="submit" class="btn-exam">Post Comment</button>
+        </form>
+    </div>
+</div>

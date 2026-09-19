@@ -21,6 +21,11 @@ namespace BSIT31E2_Karunungan_Eirene_Portfolio.Controllers
             return View(project);
         }
 
+        public IActionResult Error()
+        {
+            return View("~/Views/Shared/Error.cshtml");
+        }
+
         [HttpPost]
         public IActionResult AddComment(int projectId, string author, string text)
         {
