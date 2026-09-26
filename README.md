@@ -10,7 +10,7 @@ GitHub Repositories.
 
 ## Login Credentials
 * username: admin
-* password: admin123
+* password: admin123!
 
 ## RUN the System
 
